@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Panel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h4 class="text-center mb-4">Ticket - Student Panel</h4>
+        <div class="row">
+            <!-- To Do Section -->
+            <div class="col-md-4 ">
+                <div class="panel shadow">
+                    <h5 class="panel-heading text-start">TO DO</h5>
+                    <div class="panel-body" id="todo">
+                        <div class="task-card "  draggable="true" id="task-1">
+                            <h6>Sidebar not working <i class="ri-external-link-line"></i> </h6>
+                            <small><i class="ri-calendar-2-line"></i> 28/4/2023, 1:03pm</small>
+                        </div>
+                        <div class="task-card" draggable="true" id="task-2">
+                            <h6>Course search error <i class="ri-external-link-line"></i></h6>
+                            <small><i class="ri-calendar-2-line"></i> 15/4/2024, 2:42pm</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- In Progress Section -->
+            <div class="col-md-4">
+                <div class="panel shadow">
+                    <h5 class="panel-heading text-start">IN PROGRESS</h5>
+                    <div  class="panel-body" id="in-progress">
+                        <div class="task-card" draggable="true" id="task-3">
+                            <h6>Responsive Issue <i class="ri-external-link-line"></i></h6>
+                            <small><i class="ri-calendar-2-line pe-1"></i>29/4/2023, 12:09pm</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resolved Section -->
+            <div class="col-md-4">
+                <div class="panel">
+                    <h5 class="panel-heading">RESOLVED </h5>
+                    <div class="panel-body" id="resolved">
+                        <div class="task-card resolved" draggable="true" id="task-4">
+                            <h6 >Undergraduate courses in Malaysia <i class="ri-external-link-line"></i></h6>
+                            <small><i class="ri-calendar-2-line pe-1"></i>21/2/2023, 4:51pm</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
